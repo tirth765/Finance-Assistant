@@ -1,0 +1,141 @@
+.aboutus-container {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+  color: #ffffff;
+}
+
+.aboutus-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutus-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutus-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.aboutus-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.aboutus-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.aboutus-section {
+  background-color: #2d2d2d;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.aboutus-section:hover {
+  transform: translateY(-5px);
+}
+
+.aboutus-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4a90e2;
+}
+
+.aboutus-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #363636;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.benefits-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+  .aboutus-container {
+    padding: 2rem 1rem;
+  }
+
+  .aboutus-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .aboutus-section {
+    padding: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-header h1 {
+    font-size: 2rem;
+  }
+
+  .aboutus-subtitle {
+    font-size: 1rem;
+  }
+
+  .aboutus-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .aboutus-section p {
+    font-size: 1rem;
+  }
+} 

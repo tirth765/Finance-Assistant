@@ -1,0 +1,114 @@
+.monthwise-expense-chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97%;
+    max-width: 900px;
+    padding: 24px 20px 32px 20px;
+    background-color: #181818;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    margin: 32px auto 0 auto;
+    color: #f1f1f1;
+}
+
+.dark-theme {
+    background-color: #181818 !important;
+    color: #f1f1f1;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.chart-header h2 {
+    color: #f1f1f1;
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.month-select {
+    padding: 8px 16px;
+    border: 1px solid #7f5af0;
+    border-radius: 6px;
+    background-color: #232323;
+    font-size: 1rem;
+    color: #f1f1f1;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.month-select:hover, .month-select:focus {
+    border-color: #a084ee;
+}
+
+.chart-wrapper {
+    height: 450px;
+    margin-top: 10px;
+    background: #232323;
+    border-radius: 10px;
+    padding: 12px 0;
+}
+
+.chart-loading,
+.chart-error,
+.no-data-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    background: #232323;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.recharts-legend-wrapper {
+    margin-top: 50px !important;
+}
+.chart-error {
+    color: #ff4c4c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .monthwise-expense-chart-container {
+        width: 99%;
+        padding: 16px 4px 24px 4px;
+    }
+    .chart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .month-selector {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .month-select {
+        width: 100%;
+    }
+    .chart-wrapper {
+        height: 320px;
+        padding: 0;
+    }
+    .chart-loading,
+    .chart-error,
+    .no-data-message {
+        height: 320px;
+    }
+}   

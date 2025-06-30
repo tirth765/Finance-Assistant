@@ -1,0 +1,6 @@
+module.exports.signupDataController = require('./signupData.controller')
+module.exports.budgetController = require('./budget.controller')
+module.exports.contactController = require('./contact.controller')
+module.exports.profileController = require('./profile.controller')
+module.exports.reviewController= require('./review.controller')
+// module.exports.expenseController = require('./expense.controller')

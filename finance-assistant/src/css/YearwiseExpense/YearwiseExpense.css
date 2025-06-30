@@ -1,0 +1,151 @@
+/* YearwiseExpense.css */
+.yearwise-expense-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.yearwise-expense-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.yearwise-expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.yearwise-expense-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.year-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.year-select {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.year-select:hover {
+  border-color: #666;
+}
+
+.year-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.date-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.month-select, .day-select {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.month-select:hover, .day-select:hover {
+  border-color: #666;
+}
+
+.month-select:focus, .day-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.expenses-table-container {
+  overflow-x: auto;
+}
+
+.expenses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.expenses-table th {
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #444;
+}
+
+.expenses-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.expenses-table tr:hover {
+  background-color: #2a2a2a;
+}
+
+.amount-cell {
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.loading, .no-expenses, .message {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .yearwise-expense-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .date-selector {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .month-select, .day-select {
+    flex: 1;
+  }
+  
+  .expenses-table th, .expenses-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+} 

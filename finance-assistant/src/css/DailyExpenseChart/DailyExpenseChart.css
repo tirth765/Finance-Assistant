@@ -1,0 +1,76 @@
+.daily-expense-chart-container {
+  padding: 20px;
+  background-color: #4e4c4c;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.date-selector {
+  position: relative;
+}
+
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+.date-input:hover {
+  border-color: #888;
+}
+
+.chart-wrapper {
+  height: 400px;
+  margin-top: 20px;
+}
+
+.chart-loading,
+.chart-error,
+.no-data-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.chart-error {
+  color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .date-selector {
+    width: 100%;
+  }
+
+  .date-input {
+    width: 100%;
+  }
+} 

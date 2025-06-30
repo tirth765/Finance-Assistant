@@ -1,0 +1,192 @@
+.contactus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #ffffff;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.contactus-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contactus-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactus-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contactus-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.contactus-details {
+  margin-bottom: 30px;
+}
+
+.contactus-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contactus-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  fill: #3498db;
+  flex-shrink: 0;
+}
+
+.contactus-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.contactus-item p {
+  margin: 0;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1e1e1e;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #3498db;
+  transform: translateY(-3px);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #cccccc;
+  transition: fill 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  fill: white;
+}
+
+.contactus-form-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactus-form {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.status-message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.loading {
+  background-color: #2d2d2d;
+  color: #cccccc;
+}
+
+.status-message.success {
+  background-color: #1e4620;
+  color: #a8e6a8;
+}
+
+.status-message.error {
+  background-color: #4a1e1e;
+  color: #e6a8a8;
+}
+
+@media (max-width: 768px) {
+  .contactus-content {
+    flex-direction: column;
+  }
+  
+  .contactus-info,
+  .contactus-form-container {
+    width: 100%;
+  }
+} 
